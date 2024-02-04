@@ -26,7 +26,7 @@ const UserController = {
       const userList = await userService.getAllUsers();
       return res
       .send({
-        message: "User has been fetched successfully",
+        message: "User has been fetched successfully!",
         data: userList
       })
     }
