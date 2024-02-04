@@ -16,7 +16,7 @@ const UserController = {
     } catch (error) {
       res
         .status(500)
-        .send({ message: "Error creating user", error: error.message });
+        .send({ message: "Error creating user!", error: error.message });
     }
   }
   },
@@ -26,7 +26,7 @@ const UserController = {
       const userList = await userService.getAllUsers();
       return res
       .send({
-        message: "User has been fetched successfully",
+        message: "User has been fetched successfully!",
         data: userList
       })
     }
