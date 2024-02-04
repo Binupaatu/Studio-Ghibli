@@ -12,7 +12,7 @@ const UserController = {
       const user = await userService.createUser(req.body);
       res
         .status(201)
-        .send({ message: "User created Successfully!", user: req.body });
+        .send({ message: "User created Successfully", user: req.body });
     } catch (error) {
       res
         .status(500)
